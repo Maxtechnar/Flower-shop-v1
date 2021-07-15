@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    position: fixed;
+    height: 160px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    padding-top: 37px;
+    padding-right: 1380px;
+    display: flex;
+    position: absolute;
+}
+
+.social a{
+    width: 30px;
+    height: 30px;
+}
+.logo img{
+    width: 300px;
+    padding-left:640px;
+    padding-top: 20px;
+}
+
+.logo .line{
+    padding-top: 20px;
+    width: 1550px;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid rgb(172, 167, 167);
+   
+}
+
+.call{
+    position: absolute;
+    display: flex;
+    padding-top: 40px;
+    margin-left: 1250px;
+}
+
+.call a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+  position: absolute;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+    font-size: 24px;
+}
+
+.navbar a:hover{
+    color: blue;
+}
+
+.outgoing-number {
+  cursor: pointer;
+  padding-left: 40px;
+  margin-left: -5px;
+}
+
+.outgoing-number a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    padding-right: 100px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #28292b;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.video{
+    position: relative;
+}
+.video_media{
+    height: auto;
+    margin-top:0;
+    margin-left: 0;
+    width: 100%;
+}
+.intro{
+    margin-top: 120px;
+    max-height: 80vh;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.intro_title{
+    margin:0;
+    font-size: 85px;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+}
+.intro_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.container {
+    text-align: center;
+    max-width: 386px;
+    margin: 0 auto;
+}
+.logo{
+    justify-content: center;
+}
+img.animated-gif{
+    width: 30px;
+    height: auto;
+    margin-right: 1%;
+  }
+
+
+.main-card{
+    display: flex;
+    padding-left: 80px;
+    justify-content: center;
+    height: 280px;
+}
+
+.info{
+	padding-left: 50px;
+	
+}
+
+.image{
+    margin-top: 40px;
+    height: 120px;
+    width: 120px;
+}
+
+.name{
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif ;
+}
+
+.new-products{
+    width: 100%;
+    height: 1000px;
+    background-color: #edf2f5;
+    justify-content: center;
+}
+
+.new-products h1{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.card1{
+    padding-left: 60px;
+}
