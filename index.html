@@ -5,18 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <link type="image/x-icon" sizes="192x192" rel="icon" href="img/favicon.ico">
   <title>Shop</title>
 </head>
 
 <body>
-  <header>
+
+  <header id="header">
     <div class="social">
       <a href=""><img src="img/icons8-facebook-f-24.png" alt=""></a>
       <a href=""><img src="img/icons8-вконтакте-24.png" alt=""></a>
       <a href=""><img src="img/icons8-instagram-24.png" alt=""></a>
     </div>
     <div class="logo">
-      <img src="img/-2___1_.svg" alt="">
+      <img src="img/photo_2021-07-19_12-53-14.jpg" alt="">
       <div class="line">
       </div>
     </div>
@@ -27,8 +30,28 @@
       </div>
       <div class="outgoing-number">
         <img src="img/telephone-outbound.svg" alt="">
-        <a href="mailto:asdasf@mail.ru">Обратный звонок</a>
+        <a href="#popup">Обратный звонок</a>
       </div>
+    </div>
+    <div class="popup" id="popup">
+      <div class="form">
+        <form action="#" id="form" class="popup_body">
+          <h1 class="form_title">ЗАКАЗАТЬ ЗВОНОК</h1>
+          <div class="form_item">
+            <label for="formName" class="form_label">Имя:</label>
+            <input class="form_input req" id="formName" type="text">
+          </div>
+          <div class="form_item">
+            <label for="formNumber" class="form_label ">Номер телефона*:</label>
+            <input class="form_input req number" id="formNumber" type="text">
+          </div>
+          <div class="form_item">
+          </div>
+          <button type="submit" class="form_button">Отправить</button>
+        </form>
+      </div>
+
+    </div>
     </div>
     <div class="navbar">
       <a href="#1">Каталог</a>
@@ -38,7 +61,6 @@
     </div>
 
   </header>
-
   <div class="intro">
     <div class="video">
       <video class="video_media" src="video/videoplayback (online-video-cutter.com).mp4" autoplay muted loop></video>
@@ -84,40 +106,164 @@
           src="https://static.tildacdn.com/tild3131-6236-4133-a235-386566373362/noun_Flower_973369-0.svg" alt="">
       </div>
       <h4 class="name">Уникальность</h4>
-      <p class="aboutPosition">Самые необычные композиции и модные букеты.</p>
+      <p class="aboutPosition" id="1">Самые необычные композиции и модные букеты.</p>
     </div>
   </div>
+
   <div class="new-products">
-    <section id='1'>
-      <h1>Каталог</h1>
-    </section>
-
-    <div class="list">
-      <div class="card1">
-        <img
-          src="https://thumb.tildacdn.com/tild3731-6264-4362-a262-366335616464/-/cover/260x300/center/center/-/format/webp/5000.jpg">
-        <p>5000 р.</p>
+    <div class="tabs_nav">
+      <a class="tabs-nav-btn active" data-tab="#tab_01">Все букеты</a>
+      <a class="tabs-nav-btn" data-tab="#tab_02">Авторские букеты</a>
+      <a class="tabs-nav-btn" data-tab="#tab_03">В шляпной коробке</a>
+      <a class="tabs-nav-btn" data-tab="#tab_04">Свадебные букеты</a>
+    </div>
+    <div class="tabs_body">
+      <div class="tabs_block active" id="tab_01">
+        <div class="card">
+          <img
+            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
+            alt="">
+          <h5>5000р.</h5>
+        </div>
+        <div class="card">
+          <img
+            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
+            alt="">
+          <h5>5000р.</h5>
+        </div>
+        <div class="card">
+          <img
+            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
+            alt="">
+          <h5>5000р.</h5>
+        </div>
+        <div class="card">
+          <img
+            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
+            alt="">
+          <h5>5000р.</h5>
+        </div>
+        <div class="card">
+          <img
+            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
+            alt="">
+          <h5>5000р.</h5>
+        </div>
       </div>
-      <div class="card1">
+    </div>
+    <div class="tabs_block" id="tab_02">
+      <div class="card">
         <img
-          src="https://thumb.tildacdn.com/tild3731-6264-4362-a262-366335616464/-/cover/260x300/center/center/-/format/webp/5000.jpg">
-
-        <p>5000 р.</p>
+          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
+          alt="">
+        <h5>5000р.</h5>
       </div>
-      <div class="card1">
+      <div class="card">
         <img
-          src="https://thumb.tildacdn.com/tild3731-6264-4362-a262-366335616464/-/cover/260x300/center/center/-/format/webp/5000.jpg">
-
-        <p>5000 р.</p>
+          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
+          alt="">
+        <h5>5000р.</h5>
       </div>
-      <div class="card1">
+      <div class="card">
         <img
-          src="https://thumb.tildacdn.com/tild3731-6264-4362-a262-366335616464/-/cover/260x300/center/center/-/format/webp/5000.jpg">
-
-        <p>5000 р.</p>
+          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+    </div>
+    <div class="tabs_block" id="tab_03">
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
+          alt="">
+        <h5>5000р.</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
+          alt="">
+        <h5>5000р.</h5>
       </div>
     </div>
   </div>
+  <div class="delivery" id="4">
+    <h1>Доставка</h1>
+    <div class="block1">
+      <h2>График работы:</h2>
+      <div class="line"></div>
+      <p>Доставка осуществляется 7 дней в неделю, с 10:00 до 22:00.</p>
+    </div>
+    <div class="block1">
+      <h2>Сроки:</h2>
+      <div class="line"></div>
+      <p>Возможна через 2 часа после оформления и подтверждения<br>
+        заказа для готового букета и 3 часа для индивидуального
+        авторского.</p>
+    </div>
+    <div class="block1">
+      <h2>Точность:</h2>
+      <div class="line"></div>
+      <p>Доставка бесплатная через 3 часа на букеты от 3000₽.</p>
+    </div>
+  </div>
+
+  <footer id="3">
+    <div class="footer">
+      <h3>Contacts:</h3>
+      <p>+7 (969) 041-44-44</p>
+      <br>
+      <p>bouquet.mscw@gmail.com</p>
+      <br>
+      <p>Ленинский проспект 12,</p>
+      <br>
+      <p>Москва</p>
+      <br>
+      <a href="">Политика конфиденциальности</a>
+      <br>
+      <br>
+      <a href="">Наши реквизиты</a>
+    </div>
+    <div class="url">
+      <a href=""><img src="img/icons8-вконтакте-24.png" alt=""></a>
+      <a href=""><img src="img/icons8-instagram-24.png" alt=""></a>
+      <a href=""><img src="img/icons8-facebook-f-24.png" alt=""></a>
+    </div>
+
+  </footer>
+
+
 </body>
+<script defer src="app.js"></script>
+<script src="form.js"></script>
 
 </html>
