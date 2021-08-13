@@ -1,0 +1,392 @@
+@media (max-width: 1500px){
+
+}
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+    
+}
+@media (max-width: 768px){
+    body{
+        width: 768px;
+        overflow-x: hidden;
+    }
+
+    header{
+        visibility: hidden;
+        width: 768px;
+        overflow-x: hidden;
+        position: absolute;
+    }
+
+    header .navbar.local{
+	    margin-left: -40px;
+        width: 85%;
+        visibility: visible;
+        background-color: black;
+        position: absolute;
+	}
+
+    
+    .navbar a{
+        color: white;
+        position: relative;
+        padding-left: 50px;
+	}
+    
+    .call{
+        display: none;
+    }
+
+    .social{
+        display: none;
+    }
+    
+    .logo img{
+        visibility: visible;
+        margin-left: 20px;
+    }
+
+    .burger .icon1 {
+        visibility: visible;
+        position: absolute;
+        display: flex;
+        margin-left: 330px;
+    }
+
+    .burger{
+         position: absolute;
+         margin-left: 40px;
+    }
+
+    .intro{
+        height: 350px;
+        width: 826px;
+    }
+
+
+    .intro h1{
+        text-align: center;
+    }
+
+    .main-card{
+        display: block;
+        position: absolute;
+        height: 1000px;
+        width: 70%; 
+        margin-left: 35%;
+        margin-right: 30%;
+    }
+
+    .name1{
+        margin-top: 15px;
+        margin-left: -20px;
+        font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif ;
+    }
+    
+    .name2{
+        margin-top: 15px;
+        margin-left: -35px;
+        font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif ;
+    }
+    
+    .name3{
+        margin-top: 15px;
+        margin-left: -15px;
+        font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif ;
+    }
+
+    .aboutPosition{
+        margin-left: -100px;
+    }
+
+    .image1{
+        margin-top: 40px;
+        height: 120px;
+        width: 120px;
+        margin-left: -15px;
+    }
+
+    .image2{
+        margin-top: 40px;
+        height: 120px;
+        width: 120px;
+        margin-left: 15px;
+    }
+
+    .image{
+        margin-top: 40px;
+        height: 120px;
+        width: 120px;
+        margin-left: 20px;
+    }
+
+    .new-products{
+        margin-top: 1000px;
+        height: 1400px;
+        width: 826px;
+    }
+
+    .tabs_block{
+        visibility: visible;
+        margin-top: 180px;
+        justify-content: center;
+    }
+
+    .tabs_nav{
+        position: absolute;
+        display: block;
+        margin-left: 32%;
+        margin-right: 30%;
+        margin-top: -120px;
+}
+
+    .tabs-nav-btn{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .tabs_nav a{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .tabs_body{
+        padding-top: 100px;
+    }
+
+    .tabs_block.active{
+        display: block;
+        margin-left: 30%;
+        margin-right: 25%;
+    }
+
+    .tabs_block{
+        display: none;
+        margin-top: 180px;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .card{
+        display: flex;
+        padding-top: 30px;
+        margin-left: -23%;
+        margin-right: 30%;
+    }
+
+    .card img{
+        padding-left: 20px;
+    }
+    
+    .delivery{
+        margin-top: -120px;
+        height: 500px;
+    }
+
+    .delivery h1{
+        margin-left: 80px;
+        font-size: 30px;
+    }
+
+    .block1 h2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .block1{
+        padding-left: 90px;
+        margin-top: -150px;
+    }
+
+    footer{
+        background-color:#edf2f5;
+        width: 826px;
+        height: 600px;
+        position: absolute;
+    }
+    
+    footer h1{
+        text-align: center;
+        color: #1fb4b3 ;
+        margin-top: 60px;
+    }
+    
+    .footer{
+        margin-top: 50px;
+        text-align: center;
+        font-family:'Noto Sans JP', sans-serif ;
+        font-weight: bold;
+    }
+}
+
+
+
+@media (max-width: 480px){
+    
+        body{
+            width: 768px;
+            overflow-x: hidden;
+        }
+    
+        header{
+            visibility: hidden;
+            width: 768px;
+            overflow-x: hidden;
+            position: absolute;
+        }
+    
+        .logo img{
+            width: 250px;
+            height: 150px;
+            margin-left: -10px;
+        }
+
+        .burger .icon1 {
+            position: absolute;
+            display: flex;
+            margin-top: 50px;
+            margin-left: 310px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+
+        header .navbar.local{
+            margin-left: -40px;
+            width: 85%;
+            visibility: visible;
+            background-color: black;
+            position: absolute;
+        }
+
+        .main-card{
+            display: block;
+            position: absolute;
+            width: 100%; 
+            margin-left: 100%;
+         
+        }
+    
+        .name{
+            margin-top: 15px;
+            margin-left: -40px;
+            font-size:   38px;
+            font-family: 'Noto Sans JP', sans-serif ;
+        }
+
+        .name1{
+            margin-top: 15px;
+            margin-left: -100px;
+            font-size:   38px;
+            font-family: 'Noto Sans JP', sans-serif ;
+        }
+        
+        .name2{
+            margin-top: 15px;
+            margin-left: -135px;
+            font-size: 38px;
+            font-family: 'Noto Sans JP', sans-serif ;
+        }
+        
+        .name3{
+            margin-top: 15px;
+            margin-left: -70px;
+            font-size: 38px;
+            font-family: 'Noto Sans JP', sans-serif ;
+        }
+    
+        .aboutPosition{
+            margin-left: -220px;
+            font-size: 32px;
+        }
+    
+        .image1{
+            margin-top: 40px;
+            height: 160px;
+            width: 160px;
+            margin-left: -25px;
+        }
+    
+        .image2{
+            margin-top: 40px;
+            height: 160px;
+            width: 160px;
+            margin-left: 15px;
+        }
+    
+        .image{
+            margin-top: 40px;
+            height: 160px;
+            width: 160px;
+            margin-left: 20px;
+        }
+
+        .new-products{
+            margin-top: 1500px;
+            height: 1400px;
+            width: 826px;
+        }
+
+        .tabs_block{
+            visibility: visible;
+            margin-top: 180px;
+            justify-content: center;
+        }
+    
+        .tabs_nav{
+            position: absolute;
+            display: flex;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: -120px;
+    }
+    
+        .tabs-nav-btn{
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .tabs_nav a{
+            display: block;
+            cursor: pointer;
+        }
+        
+        .tabs_body{
+            padding-top: 100px;
+        }
+    
+        .tabs_block.active{
+            display: block;
+            margin-left: 30%;
+            margin-right: 25%;
+        }
+    
+        .tabs_block{
+            display: none;
+            margin-top: 180px;
+            justify-content: center;
+            position: absolute;
+        }
+    
+        .card{
+            display: flex;
+            padding-top: 30px;
+            margin-left: -23%;
+            margin-right: 30%;
+        }
+    
+        .card img{
+            padding-left: 20px;
+        }
+     }
+

@@ -21,3 +21,11 @@ tabsBtn.forEach(function (btn) {
 });
 
 
+menu.onclick = function click() {
+    let call = document.getElementById("top-nav")
+    if (call.className === "navbar") {
+        call.className += " local";
+    } else {
+        call.className = "navbar";
+    }
+}

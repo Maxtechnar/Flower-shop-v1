@@ -4,12 +4,34 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
     form.addEventListener("submit", formSend);
 
-    function formSend(e) {
+    async function formSend(e) {
         e.preventDefault();
         let error = formValidate(form);
+
+        let formData = new FormData(form);
+
+
+
+        if (error === 0) {
+            let response = await fetch('mail.php', {
+                method: "POST",
+                body: formData
+            });
+            alert("Спасибо за заявку!");
+            if (response.ok) {
+                let result = await response.json();
+                alert(result.message);
+                formPreview.innerHTML = " ";
+                form.reset();
+            }
+        } else {
+            alert("Не правильно введен номер! Пожалуйста обновите страницу и попробуйте снова!");
+        }
+
+
     }
 
-    async function formValidate(form) {
+    function formValidate(form) {
         let error = 0;
         let formReq = document.querySelectorAll(".req");
 
@@ -29,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
-
+        return error;
     }
     function addError(input) {
         input.parentElement.classList.add("error");

@@ -1,16 +1,25 @@
+@font-face {
+    font-family: "Daray";
+    src: url(/DARAY.OTF);
+}
+
 *{
     margin: 0;
     padding: 0;
     outline: none;
+    
 }
 
-*:focus{
-    box-shadow: 0 0 15px #7a956b;
+body{
+    box-sizing: border-box;
+    font-family: "Daray";
+   
 }
 
 html{
 scroll-behavior:smooth;
 }
+
 
 header{
     width: 100%;
@@ -19,16 +28,31 @@ header{
     z-index: 6;
     position: fixed;
     height: 160px;
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
 }
 
+.time{
+    margin-top: 65px;
+    position: absolute;
+    margin-right: 1280px;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 76%;
+}
+
 .social{
-    padding-top: 37px;
+    padding-top: 60px;
     padding-right: 1380px;
     display: flex;
     position: absolute;
+    margin-left: 430px;
 }
 
 .social a{
@@ -52,8 +76,12 @@ header{
 .call{
     position: absolute;
     display: flex;
-    padding-top: 40px;
-    margin-left: 1250px;
+    margin-top: 40px;
+    margin-left: 1150px;
+}
+
+.number{
+    padding-top: 20px;
 }
 
 .call a{
@@ -78,41 +106,61 @@ header{
     color: #1fb4b3;
 }
 
+
+
 .outgoing-number {
   cursor: pointer;
   padding-left: 40px;
   margin-left: -5px;
+  margin-top: -20px;
 }
 
-.outgoing-number a{
-    text-decoration: none;
-    color: black;
+
+a.glo{
+    border-radius: 4px;
     margin-left: 5px;
     padding-right: 100px;
-}
+    color:#00c6ff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    width:150px;
+    text-decoration:none;
+    text-align:center;
+    margin:30px 0;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#00c6ff 50%,#00c6ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .3s ease-in .3s;
+    font:  12px tahoma;
+    border: 1px solid #00C6FF;
+    
+   }
+  a.glo:hover {
+   background-position: 0 0;
+   color:#fff;
+   cursor: pointer;
+   }
 
-.no-scroll {
-    overflow-y: hidden;
-}
-
-.nav-link {
+   .nav-link {
     display: block;
     padding: 0.5rem 1rem;
     color: #28292b;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-.video{
+    .video{
+    margin-top: 40px;
     position: relative;
 }
-.video_media{
+    .video_media{
     height: auto;
     margin-top:0;
     margin-left: 0;
     width: 100%;
 }
 .intro{
-    margin-top: 120px;
+    margin-top: 130px;
     max-height: 85vh;
     overflow: hidden;
     position: relative;
@@ -160,15 +208,15 @@ img.animated-gif{
 
 .main-card{
     display: flex;
-    padding-left: 80px;
     justify-content: center;
     height: 280px;
 }
 
-.info{
-	padding-left: 50px;
-	
+.card{
+    margin-left: -25px;
 }
+
+
 
 .image{
     margin-top: 40px;
@@ -176,10 +224,62 @@ img.animated-gif{
     width: 120px;
 }
 
+.image1{
+    margin-top: 40px;
+    height: 120px;
+    width: 120px;
+}
+
+.image2{
+    margin-top: 40px;
+    height: 120px;
+    width: 120px;
+}
+
 .name{
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 18px;
     font-family: 'Noto Sans JP', sans-serif ;
+}
+
+.name1{
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif ;
+}
+
+.name2{
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif ;
+}
+
+.name3{
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif ;
+}
+
+.aboutPosition{
+    margin-top: 15px;
+}
+
+.icon1{
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.icon2{
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    visibility: hidden;
 }
 
 .new-products{
@@ -301,4 +401,5 @@ footer a{
 .url a{
     padding-left: 5px;
 }
+
 
