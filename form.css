@@ -9,6 +9,8 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    font-family: "DISPLAYED";
+    font-weight: bold;
 }
 
 .popup{
@@ -31,7 +33,7 @@
     left: 0;
     overflow-y: auto;
     transition: all 0.3 ease 0s;
-    z-index: 10;
+   
 }
 
 .popup .form:target{

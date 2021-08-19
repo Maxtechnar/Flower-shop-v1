@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Daray";
+    src: url(/DARAY.OTF);
+}
 @media (max-width: 1500px){
 
 }
@@ -18,23 +22,36 @@
         width: 768px;
         overflow-x: hidden;
         position: absolute;
+        height: 100px;
+        
     }
 
-    header .navbar.local{
-	    margin-left: -40px;
-        width: 85%;
+    header .navbar{
+        visibility: hidden;
+    }
+
+    header .navbar.local {
+        margin-left: -73px;
+        width: 91%;
         visibility: visible;
-        background-color: black;
+        background-color: white;
         position: absolute;
-	}
+        margin-top: 22px;
+        height: 4px;
+    }
 
     
     .navbar a{
-        color: white;
+        color: black;
         position: relative;
-        padding-left: 50px;
+        padding-left: 14px;
+        font-size: 33px;
 	}
     
+    .nav{
+        margin-top: -74px;
+    }
+
     .call{
         display: none;
     }
@@ -62,7 +79,7 @@
 
     .intro{
         height: 350px;
-        width: 826px;
+        width: 838px;
     }
 
 
@@ -70,38 +87,51 @@
         text-align: center;
     }
 
+    .video{
+        margin-top: -53px;
+        position: relative;
+    }
+
     .main-card{
         display: block;
         position: absolute;
         height: 1000px;
-        width: 70%; 
-        margin-left: 35%;
+        width: 65%;
+        margin-left: 30%;
         margin-right: 30%;
+        padding-left: 90px;
+        
+    }
+
+    .name{
+        margin-top: 15px;
+        margin-left: -20px;
+        font-size: 28px;
+     
     }
 
     .name1{
         margin-top: 15px;
         margin-left: -20px;
-        font-size: 18px;
-        font-family: 'Noto Sans JP', sans-serif ;
+      
+     
     }
     
     .name2{
         margin-top: 15px;
         margin-left: -35px;
-        font-size: 18px;
-        font-family: 'Noto Sans JP', sans-serif ;
+        
+       
     }
     
     .name3{
         margin-top: 15px;
         margin-left: -15px;
-        font-size: 18px;
-        font-family: 'Noto Sans JP', sans-serif ;
     }
 
     .aboutPosition{
-        margin-left: -100px;
+        margin-left: -140px;
+     
     }
 
     .image1{
@@ -126,9 +156,9 @@
     }
 
     .new-products{
-        margin-top: 1000px;
+        margin-top: 1080px;
         height: 1400px;
-        width: 826px;
+        width: 838px;
     }
 
     .tabs_block{
@@ -140,7 +170,7 @@
     .tabs_nav{
         position: absolute;
         display: block;
-        margin-left: 32%;
+        margin-left: 37%;
         margin-right: 30%;
         margin-top: -120px;
 }
@@ -164,8 +194,8 @@
 
     .tabs_block.active{
         display: block;
-        margin-left: 30%;
-        margin-right: 25%;
+        margin-left: 28%;
+        margin-right: 30%;
     }
 
     .tabs_block{
@@ -178,7 +208,7 @@
     .card{
         display: flex;
         padding-top: 30px;
-        margin-left: -23%;
+        margin-left: -20%;
         margin-right: 30%;
     }
 
@@ -193,30 +223,36 @@
 
     .delivery h1{
         margin-left: 80px;
-        font-size: 30px;
+        font-size: 54px;
     }
 
     .block1 h2{
-        font-size: 18px;
+        font-size: 36px;
         font-weight: bold;
     }
 
+.block1 p{
+    font-size: 24px;
+}
+
     .block1{
         padding-left: 90px;
-        margin-top: -150px;
+        margin-top: -120px;
     }
 
     footer{
         background-color:#edf2f5;
-        width: 826px;
+        width: 838px;
         height: 600px;
         position: absolute;
+        margin-top: 60px;
     }
     
     footer h1{
-        text-align: center;
-        color: #1fb4b3 ;
-        margin-top: 60px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 46px;
+        font-family: "Daray";
     }
     
     .footer{
@@ -237,10 +273,18 @@
         }
     
         header{
-            visibility: hidden;
-            width: 768px;
+            width: 836px;
             overflow-x: hidden;
-            position: absolute;
+            position: fixed;
+            height: 168px;
+            opacity: 100%;
+            background-color: white;   
+            visibility: visible; 
+            overflow-y: hidden;
+        }
+
+        header .navbar{
+            visibility: hidden;
         }
     
         .logo img{
@@ -256,56 +300,91 @@
             margin-left: 310px;
             font-size: 60px;
             font-weight: bold;
+            color: red  ;
+        }
+
+        .burger .icon2 {
+            position: absolute;
+            display: flex;
+            margin-top: 50px;
+            font-size: 60px;
+            font-weight: bold;
+            margin-left: -362px;
+            visibility: visible;
+        }
+
+        header .navbar.local{
+            margin-left: -80px;
+            width: 88%;
+            visibility: visible;
+            background-color: white;
+            position: absolute;
+            opacity: 100%;
+        }
+
+        .intro{
+            height: 450px;
+            width: 838px;
         }
 
 
-        header .navbar.local{
-            margin-left: -40px;
-            width: 85%;
-            visibility: visible;
-            background-color: black;
-            position: absolute;
+        .video{
+            margin-top: 23px;
+            position: relative;
+        }
+        
+        .intro_title{
+            font-size: 164px;
+            margin-left: 10%;
         }
 
         .main-card{
             display: block;
             position: absolute;
-            width: 100%; 
-            margin-left: 100%;
-         
+            width: 120%;
+            margin-left: 65%;
         }
     
         .name{
             margin-top: 15px;
             margin-left: -40px;
-            font-size:   38px;
-            font-family: 'Noto Sans JP', sans-serif ;
+            font-size: 68px;
+            font-family: "DARAY";
+            font-weight: bold;
         }
 
         .name1{
             margin-top: 15px;
             margin-left: -100px;
-            font-size:   38px;
-            font-family: 'Noto Sans JP', sans-serif ;
+            font-size: 68px;
+            font-family: "DARAY";
+            font-weight: bold;
+           
         }
         
         .name2{
             margin-top: 15px;
             margin-left: -135px;
-            font-size: 38px;
-            font-family: 'Noto Sans JP', sans-serif ;
+            font-size: 68px;
+            font-family: "DARAY";
+            font-weight: bold;
+            
         }
         
         .name3{
             margin-top: 15px;
             margin-left: -70px;
-            font-size: 38px;
-            font-family: 'Noto Sans JP', sans-serif ;
+            font-size: 68px;
+            font-family: "DARAY";
+            font-weight: bold;
+           
         }
     
         .aboutPosition{
-            margin-left: -220px;
-            font-size: 32px;
+            margin-left: -279px;
+            font-size: 42px;
+            font-family: "DARAY";
+            font-weight: bold;
         }
     
         .image1{
@@ -330,23 +409,23 @@
         }
 
         .new-products{
-            margin-top: 1500px;
+            margin-top: 1800px;
             height: 1400px;
-            width: 826px;
+            width: 837px;
         }
 
         .tabs_block{
             visibility: visible;
-            margin-top: 180px;
+            margin-top: 170px;
             justify-content: center;
         }
     
         .tabs_nav{
             position: absolute;
-            display: flex;
-            margin-left: 20%;
+            margin-left: 10%;
             margin-right: 20%;
             margin-top: -120px;
+            display: flex;
     }
     
         .tabs-nav-btn{
@@ -355,10 +434,13 @@
             text-align: center;
             font-size: 24px;
             font-weight: bold;
+            padding-left: 80px;
         }
         .tabs_nav a{
             display: block;
             cursor: pointer;
+            font-size: 53px;
+            font-weight: bold;
         }
         
         .tabs_body{
@@ -367,15 +449,15 @@
     
         .tabs_block.active{
             display: block;
-            margin-left: 30%;
+            margin-left: 65%;
             margin-right: 25%;
         }
     
         .tabs_block{
             display: none;
-            margin-top: 180px;
             justify-content: center;
             position: absolute;
+            margin-top: 170px;
         }
     
         .card{
@@ -388,5 +470,40 @@
         .card img{
             padding-left: 20px;
         }
+
+
+    .delivery h1{
+        font-size: 90px;
+    }
+
+    .block1{
+        margin-top: -55px;
+    }
+
+    .block1 h2{
+        font-size: 57px;
+    }
+
+    .block1 p{
+        font-size: 40px;
+    }
+
+      footer{
+        margin-top:400px;
+    }
+
+.footer h1{
+    font-size: 90px;
+}
+
+    .footer{
+        font-size: 33px;
+    }
+
+    .url img {
+        margin-top: -10px;
+        width: 51px;
+    }
+
      }
 
