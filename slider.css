@@ -156,7 +156,7 @@
 	position: absolute;
 	top: 50%;
 	margin: -30px 0px 0px 10px;
-	z-index: 10;
+	z-index: 15;
 	font-size: 0;
 	width: 30px;
 	height: 60px;
