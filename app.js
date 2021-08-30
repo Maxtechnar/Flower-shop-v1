@@ -29,3 +29,12 @@ menu.onclick = function click() {
         call.className = "navbar";
     }
 }
+
+menu1.onclick = function click1() {
+    let call = document.getElementById("outgoing")
+    if (call.className === "call") {
+        call.className += " local_nav";
+    } else {
+        call.className = "call";
+    }
+}

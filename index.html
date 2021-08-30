@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="form.css">
   <link rel="stylesheet" href="sizes.css">
   <link type="image/x-icon" sizes="192x192" rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="slider.css">
 
   <title>Shop</title>
 </head>
 
-<body id="first">
+<body>
   <br>
   <header id="header">
     <div class="bg"></div>
@@ -20,9 +22,7 @@
       <p>Ежедневно с 9:00 до 20:00</p>
     </div>
     <div class="social">
-      <a href=""><img src="img/icons8-facebook-f-24.png" alt=""></a>
-      <a href=""><img src="img/icons8-вконтакте-24.png" alt=""></a>
-      <a href="https://www.instagram.com/byketi.by/"><img src="img/icons8-instagram-24.png" alt=""></a>
+      <a href="https://www.instagram.com/byket.by_/"><img src="img/icons8-instagram-24.png" alt=""></a>
     </div>
     <div class="burger">
       <a href="#header" id="menu" class="icon1">&#9776</a>
@@ -33,35 +33,36 @@
       <div class="line">
       </div>
     </div>
-    <div class="call">
+    <div class="call" id="outgoing">
       <div class="number">
         <img src="img/telephone.svg" alt="">
         <a href="tel:+375293117163">+375-29-311-71-63</a>
       </div>
+      <a href="https://www.instagram.com/byket.by_/" class="instagram">
+        <img src="img/icons8-instagram-24.png" alt="">
+      </a>
       <div class="outgoing-number">
         <a href="#popup" class="glo">Обратный звонок</a>
+        <div class="popup" id="popup">
+          <div class="form">
+            <form action="mail.php" method="POST" id="form" class="popup_body">
+              <a href="#header" class="close"><img src="img/x.svg" alt=""></a>
+              <h1 class="form_title">ЗАКАЗАТЬ ЗВОНОК</h1>
+              <div class="form_item">
+                <label for="formName" class="form_label">Имя:</label>
+                <input class="form_input req" name="user_name" id="formName" type="text">
+              </div>
+              <div class="form_item">
+                <label for="formNumber" class="form_label ">Номер телефона*:</label>
+                <input class="form_input req num" name="user_phone" id="formNumber" type="text">
+              </div>
+              <div class="form_item">
+              </div>
+              <button type="submit" class="form_button">Отправить</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="popup" id="popup">
-      <div class="form">
-        <form action="mail.php" method="POST" id="form" class="popup_body">
-          <a href="#header" class="close">X</a>
-          <h1 class="form_title">ЗАКАЗАТЬ ЗВОНОК</h1>
-          <div class="form_item">
-            <label for="formName" class="form_label">Имя:</label>
-            <input class="form_input req" name="user_name" id="formName" type="text">
-          </div>
-          <div class="form_item">
-            <label for="formNumber" class="form_label ">Номер телефона*:</label>
-            <input class="form_input req number" name="user_phone" id="formNumber" type="text">
-          </div>
-          <div class="form_item">
-          </div>
-          <button type="submit" class="form_button">Отправить</button>
-        </form>
-      </div>
-
-    </div>
     </div>
     <div class="navbar" id="top-nav">
       <div class="nav">
@@ -71,7 +72,6 @@
         <a href="#4">Доставка</a>
       </div>
     </div>
-
   </header>
 
   <div class="intro">
@@ -122,126 +122,190 @@
       <p class="aboutPosition" id="1">Самые необычные композиции и модные букеты.</p>
     </div>
   </div>
-
-  <div class="new-products">
+  <div class="new-products" id="1">
     <div class="tabs_nav">
       <a class="tabs-nav-btn active" data-tab="#tab_01">Все букеты</a>
-      <a class="tabs-nav-btn" data-tab="#tab_02">Авторские букеты</a>
-      <a class="tabs-nav-btn" data-tab="#tab_04">Свадебные букеты</a>
+      <a class="tabs-nav-btn" data-tab="#tab_02">Букет невесты</a>
+      <a class="tabs-nav-btn" data-tab="#tab_03">Букет композиция</a>
     </div>
     <div class="tabs_body">
       <div class="tabs_block active" id="tab_01">
         <div class="card">
-          <img
-            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
-            alt="">
-          <img
-            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
-            alt="">
+          <div class="content">
+            <img src="img/Каталог/Все букеты/1111.jpg" alt="">
+            <p class="text">Букет #1 - 90 руб</p>
+          </div>
+          <div class="content">
+            <img src="img/Каталог/Все букеты/22222222.jpg" alt="">
+            <p class="text">Букет « Карамельный» 120 руб</p>
+          </div>
         </div>
         <div class="card">
-          <img
-            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
-            alt="">
-          <img
-            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
-            alt="">
-
-        </div>
-        <div class="card">
-          <img
-            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
-            alt="">
-          <img
-            src="https://thumb.tildacdn.com/tild6465-3031-4365-a166-316135393033/-/cover/260x300/center/center/-/format/webp/6000_4.jpeg"
-            alt="">
+          <div class="content">
+            <img src="img/Каталог/Все букеты/333333.jpg" alt="">
+            <p class="text">Букет #2 -170 руб</p>
+          </div>
+          <div class="content">
+            <img src="img/Каталог/Все букеты/4444.jpg" alt="">
+            <p class="text">Букет «Нежность» 130 руб</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="tabs_block" id="tab_02">
       <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/6666.jpg" alt="">
+          <p class="text"> Букет невесты #1 - 140 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/77777.jpg" alt="">
+          <p class="text">Букет невесты #2 - 118 руб</p>
+        </div>
       </div>
       <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/888888.jpg" alt="">
+          <p class="text">Букет невесты #3 - 130 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/123.jpg" alt="">
+          <p class="text">Букет невесты #4 - 150 руб</p>
+        </div>
       </div>
       <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/321.jpg" alt="">
+          <p class="text">Букет невесты #5 - 75 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/343434.jpg" alt="">
+          <p class="text">Букет невесты #6 - 90 руб</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/вывывы.JPG" alt="">
+          <p class="text">Букет невесты #8 - 120 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/цццц.jpg" alt="">
+          <p class="text">Букет невесты #7 - 100 руб</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/ыыы.jpg" alt="">
+          <p class="text">Букет невесты #11 - 90 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Букет невесты/ффффф.jpg" alt="">
+          <p class="text">Букет невесты #9 - 35 руб</p>
+        </div>
       </div>
     </div>
 
     <div class="tabs_block" id="tab_03">
       <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
-          alt="">
+        <div class="content">
+          <img src="img/Каталог/Композиции/11111111.jpg" alt="">
+          <p class="text">Композиция #1 - 70 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Композиции/2222232.jpg" alt="">
+          <p class="text">Композиция #2 - 110 руб</p>
+        </div>
       </div>
       <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
-          alt="">
+        <div class="content"><img src="img/Каталог/Композиции/вввв.jpg" alt="">
+          <p class="text">Композиция #3 - 130 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Композиции/43434334.jpg" alt="">
+          <p class="text">Композиция #4 - 90 руб</p>
+        </div>
       </div>
       <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild3339-6163-4933-a534-623436373837/-/cover/260x300/center/center/-/format/webp/Aydinnn.jpg"
-          alt="">
+        <div class="content">
+          <img src="img/Каталог/Композиции/ывывыв.jpg" alt="">
+          <p class="text">Композиция #5 - 90 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Композиции/вфвфвфвц.jpg" alt="">
+          <p class="text">Композиция #7 - 120 руб</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <img src="img/Каталог/Композиции/йцйцйцц.jpg" alt="">
+          <p class="text">Композиция #9 - 60 руб</p>
+        </div>
+        <div class="content">
+          <img src="img/Каталог/Композиции/IMG_0070.jpg" alt="">
+          <p class="text">Композиция #10 - 150 руб</p>
+        </div>
       </div>
     </div>
-    <div class="tabs_block" id="tab_04">
-      <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
+  </div>
+  <div id="2"></div>
+  <br>
+  <h1 class="showcase">Инста-витрина</h1>
+  <div class="wrapper">
+    <div class="slider">
+      <div class="slider__item filter">
+        <a href="https://www.instagram.com/p/CSy4ybJov1D/"><img src="img/big/01.jpg" alt=""></a>
+        <div class="inst">
+          <a href="https://www.instagram.com/p/CSy4ybJov1D/">
+            <img src="img/instagram.svg" alt="">
+          </a>
+        </div>
       </div>
-      <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
+      <div class="slider__item">
+        <a href="https://www.instagram.com/p/CSy4NTMIZA2/"><img src="img/big/2.jpg" alt=""></a>
+        <div class="inst">
+          <a href="https://www.instagram.com/p/CSy4NTMIZA2/">
+            <img src="img/instagram.svg" alt="">
+          </a>
+        </div>
       </div>
-      <div class="card">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
-        <img
-          src="https://thumb.tildacdn.com/tild6164-6461-4465-a165-636464353830/-/cover/260x300/center/center/-/format/webp/WhatsApp_Image_2019-.jpeg"
-          alt="">
+      <div class="slider__item filter">
+        <a href="https://www.instagram.com/p/CSy3ppfo_EH/"><img src="img/big/3.jpg" alt=""></a>
+        <div class="inst">
+          <a href="https://www.instagram.com/p/CSy3ppfo_EH/">
+            <img src="img/instagram.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="slider__item">
+        <a href="https://www.instagram.com/p/CSy2yC6o7O6/"><img src="img/big/4.jpg" alt=""></a>
+        <div class="inst">
+          <a href="https://www.instagram.com/p/CSy2yC6o7O6/">
+            <img src="img/instagram.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="slider__item">
+        <a href="https://www.instagram.com/p/CSy2UtVIJAc/"><img src="img/big/5.jpg" alt=""></a>
+        <div class="inst">
+          <a href="https://www.instagram.com/p/CSy2UtVIJAc/">
+            <img src="img/instagram.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="slider__item">
+        <a href="https://www.instagram.com/p/CSy15R8o9Fy/"><img src="img/big/6.jpg" alt=""></a>
+        <div class="inst">
+          <a href="https://www.instagram.com/p/CSy15R8o9Fy/">
+            <img src="img/instagram.svg" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </div>
   <div class="delivery" id="4">
     <h1>Доставка</h1>
     <div class="block1">
-      <h2>Время доставки:</h2>
+      <h2>Доставка:</h2>
       <div class="line"></div>
       <p>Доставка осуществляется 7 дней в неделю, с 10:00 до 22:00.</p>
     </div>
@@ -273,15 +337,19 @@
 
     </div>
     <div class="url">
-      <a href=""><img src="img/icons8-вконтакте-24.png" alt=""></a>
       <a href=""><img src="img/icons8-instagram-24.png" alt=""></a>
-      <a href=""><img src="img/icons8-facebook-f-24.png" alt=""></a>
     </div>
 
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="app.js"></script>
   <script src="form.js"></script>
+  <!-- Подключаем jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Подключаем слайдер Slick -->
+  <script src="js/slick.min.js"></script>
+  <!-- Подключаем файл скриптов -->
+  <script src="js/script.js"></script>
 </body>
 
 

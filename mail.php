@@ -32,9 +32,10 @@ $mail->Body    ='Имя: ' .$name .' Телефон: ' .$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo 'Error';
+    $message = 'Error';
 } else {
-    echo "Thank you";
+    $message = "Thank you";
 }
+
 
 ?>

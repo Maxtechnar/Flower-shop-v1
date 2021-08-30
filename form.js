@@ -17,15 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 method: "POST",
                 body: formData
             });
-            alert("Спасибо за заявку!");
+
+
             if (response.ok) {
                 let result = await response.json();
                 alert(result.message);
-                formPreview.innerHTML = " ";
+                formPreview.innerHTML = "";
                 form.reset();
             }
         } else {
-            alert("Не правильно введен номер! Пожалуйста обновите страницу и попробуйте снова!");
+
         }
 
 
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const input = formReq[index];
             removeError(input);
 
-            if (input.classList.contains("number")) {
+            if (input.classList.contains("num")) {
                 if (numberTest(input)) {
                     addError(input);
                     error++;

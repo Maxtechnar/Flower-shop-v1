@@ -10,9 +10,7 @@
 
 *{
     margin: 0;
-    padding: 0;
-    outline: none;
-    
+    padding: 0;    
 }
 
 body{
@@ -42,7 +40,7 @@ header{
 .time{
     margin-top: 65px;
     position: absolute;
-    margin-right: 1270px;
+    margin-right: 1220px;
     font-size: 20px;
 }
 
@@ -56,7 +54,7 @@ header{
 }
 
 .social{
-    padding-top: 65px;
+    padding-top: 55px;
     padding-right: 1380px;
     display: flex;
     position: absolute;
@@ -66,6 +64,11 @@ header{
 .social a{
     width: 30px;
     height: 30px;
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
 }
 .logo img{
     width: 300px;
@@ -122,11 +125,13 @@ header{
 .outgoing-number {
   cursor: pointer;
   padding-left: 40px;
-  margin-left: -5px;
   margin-top: -20px;
 
 }
 
+.instagram {
+ visibility: hidden;
+}
 
 a.glo{
     border-radius: 4px;
@@ -146,7 +151,7 @@ a.glo{
     transition: all .3s ease-in .3s;
     font:  12px tahoma;
     border: 1px solid #00C6FF;
-    font-size: 13px;
+    font-size: 19px;
     font-weight: bold;
     font-family: "DISPLAYED";
     
@@ -175,7 +180,7 @@ a.glo{
     width: 100%;
 }
 .intro{
-    margin-top: 130px;
+    margin-top: 110px;
     max-height: 85vh;
     overflow: hidden;
     position: relative;
@@ -184,7 +189,7 @@ a.glo{
 
 .intro_title{
     margin:0;
-    font-size: 85px;
+    font-size: 163px;;
     color:#fff;
     text-align: center;
     font-weight: bold;
@@ -241,49 +246,49 @@ img.animated-gif{
 
 .image{
     margin-top: 40px;
-    height: 120px;
-    width: 120px;
+    height: 168px;
+    width: 167px;
 }
 
 .image1{
     margin-top: 40px;
-    height: 120px;
-    width: 120px;
+    height: 168px;
+    width: 167px;
 }
 
 .image2{
     margin-top: 40px;
-    height: 120px;
-    width: 120px;
+    height: 168px;
+    width: 167px;
 }
 
 .name{
     margin-top: 15px;
-    font-size: 28px;
+    font-size: 48px;
   
 }
 
 .name1{
     margin-top: 15px;
-    font-size: 28px;
+    font-size: 48px;
 
 }
 
 .name2{
     margin-top: 15px;
-    font-size: 28px;
+    font-size: 48px;
   
 }
 
 .name3{
     margin-top: 15px;
-    font-size: 28px;
+    font-size: 48px;
 
 }
 
 .aboutPosition{
     margin-top: 15px;
-    font-size: 24px;
+    font-size: 38px;
 
 }
 
@@ -307,10 +312,11 @@ img.animated-gif{
 
 .new-products{
     width: 100%;
-    height: 900px;
+    height: 1300px;
     background-color: #edf2f5;
-    margin-top: 50px;
+    margin-top: 250px;
 }
+
 
 .tabs_nav{
     display: flex;
@@ -327,14 +333,14 @@ img.animated-gif{
     text-decoration: none;
     color: black;
     padding-left: 60px;
-    font-size: 28px;
+    font-size: 60px;
 }
 
 
 
 .tabs_block{
     display: none;
-    margin-top: 180px;
+    margin-top: 60px;
     justify-content: center;
 }
 
@@ -348,6 +354,55 @@ img.animated-gif{
 }
 
 
+.showcase {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+
+.delivery{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    margin-top: -340px;
+    background-color: #edf2f5;
+}
+
+.content{   
+    background-color: white;
+    margin-left: 40px;
+    height: 350px;
+    margin-top: 40px;
+    cursor: pointer;    
+}
+
+.text{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.card{
+    padding-top: -30px;
+    display: block;
+}
+
+.card img{
+    width: 260px;
+    height: 300px;
+}
+
+
+
+.content:hover {
+    z-index: 1;
+    transform: scale(1.1);
+    transition: transform .3s ease;
+       
+}
 
 .delivery{
     display: flex;
@@ -360,7 +415,7 @@ img.animated-gif{
     text-align: center;
     position: absolute;
     padding-top: 160px;
-    font-size: 56px;
+    font-size: 64px;
 }
 
 .line{
@@ -376,16 +431,15 @@ img.animated-gif{
 
 .block1 p{
     padding-top: 20px;
-    font-size: 18px;
+    font-size: 38px;
 }
 
 .block1 h2{
-    font-size: 36px;
+    font-size: 52px;
 }
 
 
 footer{
-    background-color:#edf2f5;
     width: 100%;
     height: 600px;
     position: absolute;
@@ -399,18 +453,16 @@ footer h1{
 }
 
 .footer{
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 footer h1{
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 56px;
-
-   
+    font-size: 64px;
 }
 
 
@@ -421,10 +473,15 @@ footer a{
 
 .url{
     position: relative;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     text-align: center;
     margin-left: 20px;
+}
+
+.url img{
+    width: 40px;
+    height: 40px;
 }
 
 .url a{

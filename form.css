@@ -45,11 +45,13 @@
     position: absolute;
     text-decoration: none;
     color: black;
-    font-size: 28px;
     left: 93%;
     top: 2%;
-   
-    
+}
+
+.close img{
+    width: 40px;
+    height: 40px;
 }
 
 .form_title{
@@ -93,8 +95,7 @@
     border-radius: 20px;
     margin-left: 165px;
     margin-top: 50px;
-    color: white;
-   
+    color: white; 
 }
 
 .form_button:hover{
